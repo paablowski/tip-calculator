@@ -20,6 +20,7 @@ class _CalculatorViewState extends State<CalculatorView> {
             horizontal: 16.0,
           ),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
@@ -47,8 +48,6 @@ class _CalculatorViewState extends State<CalculatorView> {
                 style: Theme.of(context).textTheme.bodyText1,
               ),
               Container(
-                margin: const EdgeInsets.symmetric(
-                    horizontal: 16.0, vertical: 24.0),
                 padding:
                     const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
                 decoration: BoxDecoration(
