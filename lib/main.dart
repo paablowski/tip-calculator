@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:tip_calc/cubit/tip_calc_cubit.dart';
-import 'package:tip_calc/views/calculator_view.dart';
+
+import 'business/bloc/calculadora_propina_bloc/calculadora_propina_bloc.dart';
+import 'presentation/screens/calculator_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -33,8 +34,8 @@ class MyApp extends StatelessWidget {
         ),
       ),
       home: BlocProvider(
-        create: (context) => TipCalcCubit(),
-        child: const CalculatorView(),
+        create: (context) => CalculadoraPropinaBloc(),
+        child: const CalculatorScreen(),
       ),
     );
   }
